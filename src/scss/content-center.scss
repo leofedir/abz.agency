@@ -1,0 +1,75 @@
+@import "share";
+
+.content-space-header {
+    @include flexbox();
+    @include width-heigth(481px+4px, 52px);
+    margin: 11px 0 0 16px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.content-space-header p {
+    @include def-font(30px);
+    //margin-top: -1px;
+}
+
+.content-space-header .button {
+    @include def-font(14px);
+    @include width-heigth(145px, 30px);
+    background-color: #87b448;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    margin: 2px 0 0 0;
+}
+
+.content-space-space {
+    width: 483px;
+    height: 100%;
+    margin-left: 17px;
+    border: 1px solid #e0e2e6;
+    border-radius: 4px;
+}
+
+.content-space-menu {
+    @include flexbox();
+    flex-direction : row;
+    justify-content : space-between;
+    align-items : flex-start;
+    flex-wrap: wrap;
+    //-webkit-flex-flow: column wrap;
+    //flex-flow: column wrap;
+}
+
+.content-space-menu-block {
+    @include width-heigth(140px, 203px);
+    @include flexbox();
+    flex-flow: row wrap;
+    margin: 16px 0 0 15px;
+    display: inline-block;
+}
+
+.content-space-menu-text-block {
+    @include width-heigth(100%, 203px-140px);
+    display: flex;
+    flex-flow: column wrap;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+
+.content-space-menu-text-block p {
+    @include def-font(14px);
+    color: #1c2534;
+    text-align: center;
+    margin-top: 13px;
+    padding: 0 15px 0 15px;
+}
+
+.content-space-menu-image {
+    @include width-heigth(138px, 138px);
+    border: 1px solid #e0e2e6;
+    background: url(../images/content/markup_of_this_block.png) no-repeat;
+}
+
+
+

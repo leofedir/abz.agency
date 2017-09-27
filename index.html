@@ -2,9 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="/css/bundle.css">-->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/content-center.css">
     <title>Test assignment for Junior-Middle Frontend Developer position</title>
+
 </head>
 <body>
+    <div class="header-100persentwidth">
+        <div class="header">
+            <img class="header-valign header-logo" src="images/header/logo.png" alt="Logo">
+            <div class="header-valign header-search-blank">
+                <img class="header-search-blank-button" src="images/header/search-button.png" alt="SearchButton">
+                <input type="text" class="header-search-blank-search-text" placeholder="Company Name" id="hearder-search-text">
+            </div>
+            <div class="header-valign header-pictograms-space">
+                <div id="header-chat-image"></div>
+                <div id="header-notifications-image"></div>
+            </div>
+            <div class="header-valign header-image-placeholder">
+                <img src="images/header/user_placeholder.jpg">
+            </div>
+            <div class="header-valign header-text-placeholder">
+                <p>Maximillian Beekeeper</p>
+            </div>
+        </div>
+    </div>
+    <div class="content100">
+        <div class="side-left">SIDELEFT</div>
+        <div class="side-content">
+            <div class="content-space-header">
+                <p>Service Directory</p>
+                <button class="button">Add New Service</button>
+            </div>
+            <div class="content-space-space">
+                <div class="content-space-menu" id="id-content-space-menu">
+                    LOADING...
+                    <script src='lib/react.js'></script>
+                    <script src='lib/react-dom.js'></script>
+                    <script src='lib/babel-browser.min.js' ></script>
+                    <script src='src/js/app.jsx' type='text/babel'></script>
+                    <!--<div class="content-space-menu-block">-->
+                        <!--<img class="content-space-menu-image" src="images/content/markup_of_this_block.png">-->
+                        <!--<div class="content-space-menu-text-block"><p>Accountancy</p></div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <div class="side-right">SIDERIGHT</div>
 
+    </div>
 </body>
 </html>

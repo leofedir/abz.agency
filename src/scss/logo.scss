@@ -1,0 +1,112 @@
+@import "share";
+
+.header-100persentwidth {
+  background-image: url(../images/header/background.jpg);
+  background-repeat: repeat-x;
+  width: 100%;
+}
+
+.header {
+  min-width: $minwidth;
+  max-width: $maxwidth;
+  @include width-heigth(970px, 68px);
+  margin: 0 auto;
+  background-image: url(../images/header/background.jpg);
+  background-repeat: repeat-x;
+}
+
+.header-valign {
+  //margin-top: 10px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.header-logo {
+  margin: 11px 0px 0px 16px;
+  //margin-left: 16px;
+  //margin-top: 11px;
+}
+
+
+.header-search-blank {
+  //margin: 16px 0 0 29px;
+  margin-left: 26px;
+  margin-top: 18px;
+  background-color: $color-search-blank;
+  border-radius: 2px;
+  @include width-heigth(435px, 34px);
+}
+
+.header-search-blank-button {
+  margin: 8px 0 0 9px;
+  float: left;
+}
+
+.header-search-blank-search-text {
+  @include def-font(15px)
+  //font-family: $font-search;
+  //font-size: 15px;
+  color: white;
+  float: right;
+  @include width-heigth(396px, 34px-(2*4px));
+  margin: 4px 2px;
+  background-color: transparent;
+  border: 0px solid;
+}
+
+.header-search-blank-search-text::-webkit-input-placeholder {
+    color: white;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.header-search-blank-search-text:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;}
+
+.header-pictograms-space {
+  margin: 23px 0 0 25px;
+  //margin-left: 25px;
+  //margin-top: 23px;
+  @include width-heigth(97px, 26px);
+}
+
+.header-pictograms-space-img {
+  width: 28px;
+  height:26px;
+  background: url(../images/pictograms.png) no-repeat;
+  display: inline-block;
+  margin-right: 13px;
+}
+
+#header-chat-image {
+  @extend .header-pictograms-space-img;
+  background-position: 0 0;
+  cursor: pointer;
+  border: 0px solid;
+}
+
+#header-notifications-image {
+  @extend .header-pictograms-space-img;
+  background-position: -28px 0;
+  cursor: pointer;
+}
+
+.header-image-placeholder {
+  @include width-heigth(32px, 32px);
+  margin-top: 19px;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.header-text-placeholder {
+  margin-left: 7px;
+  margin-top: 25px;
+}
+
+.header-text-placeholder p {
+  font-family: $font-search;
+  font-size: 16px;
+  color: white;
+}

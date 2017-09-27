@@ -1,0 +1,61 @@
+$minwidth: 970px;
+$maxwidth: 1440px;
+
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot');
+    src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    //url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2') format('woff2'),
+    url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'),
+    url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
+    url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-search: 'Proxima Nova', Georgia, sans-serif;
+$color-search-blank: #73993d;
+
+@mixin width-heigth($width, $heigth) {
+  width: $width;
+  height: $heigth;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+.wrapper {
+  @include flexbox();
+}
+
+.item {
+  @include flex(1 200px);
+  @include order(2);
+}
+
+@mixin def-font($font-size) {
+  font-family: $font-search;
+  font-size: $font-size;
+}
