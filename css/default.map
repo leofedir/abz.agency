@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../src/scss/default.css",
+	"sources": [
+		"../src/scss/default.scss"
+	],
+	"sourcesContent": [
+		"* {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n}\r\n"
+	],
+	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CACZ;;;AAED,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,IAAK;CACb",
+	"names": []
+}

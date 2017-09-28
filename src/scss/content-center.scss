@@ -57,6 +57,18 @@
     justify-content: flex-start;
 }
 
+.content-space-menu-block a{
+    text-decoration: none;
+}
+
+.content-space-menu-block a:hover .content-space-menu-text-block p{
+    color: #71973c;
+}
+
+.content-space-menu-block a:hover .content-space-menu-image {
+    background: url(../images/content/markup_of_this_block_hover.png) no-repeat;
+}
+
 .content-space-menu-text-block p {
     @include def-font(14px);
     color: #1c2534;
@@ -64,6 +76,7 @@
     margin-top: 13px;
     padding: 0 15px 0 15px;
 }
+
 
 .content-space-menu-image {
     @include width-heigth(138px, 138px);
