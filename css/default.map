@@ -5,8 +5,8 @@
 		"../src/scss/default.scss"
 	],
 	"sourcesContent": [
-		"* {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n}\r\n"
+		"* {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nbody {\r\n    width: 100%;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n}"
 	],
-	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CACZ;;;AAED,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,IAAK;CACb",
+	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CACd;;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAK;CACf;;;AAED,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAK;CACzB",
 	"names": []
 }

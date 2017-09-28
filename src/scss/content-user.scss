@@ -1,0 +1,109 @@
+@import "share";
+$ColorHeader: #1c2534;
+$ColorDescription: #7c8695;
+
+
+.content-user-program-font {
+    font-family: $font-search;
+}
+
+.content-user-program-font-size-12 {
+    font-size: 12px;
+}
+
+.content-user-program-font-size-14 {
+    font-size: 14px;
+}
+
+.content-user-program-font-size-16 {
+    font-size: 16px;
+}
+
+.content-user-program-font-color-header {
+    color: $ColorHeader;
+}
+
+.content-user-program-font-color-description {
+    color: $ColorDescription;
+}
+
+.content-user-program-font-header-name {
+    @extend .content-user-program-font;
+    @extend .content-user-program-font-size-14;
+    @extend .content-user-program-font-color-description;
+}
+
+.content-user-program-font-see-all {
+    @extend .content-user-program-font;
+    @extend .content-user-program-font-size-14;
+    @extend .content-user-program-font-color-header;
+}
+
+.content-user-program-font-name {
+    @extend .content-user-program-font;
+    @extend .content-user-program-font-size-16;
+    @extend .content-user-program-font-color-header;
+}
+
+.content-user-program-font-description {
+    @extend .content-user-program-font;
+    @extend .content-user-program-font-size-14;
+    @extend .content-user-program-font-color-description;
+    line-height: 1.2;
+}
+
+.content-user-program-font-occupate {
+    @extend .content-user-program-font;
+    @extend .content-user-program-font-size-14;
+    @extend .content-user-program-font-color-description;
+    margin-top: 6px;
+}
+
+.content-user-program-font-add-friend {
+    @extend .content-user-program-font;
+    @extend .content-user-program-font-size-12;
+    @extend .content-user-program-font-color-header;
+}
+
+.content-user-program {
+    padding: 11px 15px 0 15px;
+}
+
+.content-user-program-friend-header {
+    @include flexbox();
+    flex-direction : row;
+    justify-content : space-between;
+    flex-wrap: nowrap;
+    margin-top: 8px;
+    width: 215px;
+    //margin-bottom: 16px;
+}
+
+.content-user-program-friend {
+    margin-top: 14px;
+    width: 100%;
+}
+
+.content-user-program-friend-details {
+    width: 213px;
+    @include flexbox();
+    flex-direction : row;
+    justify-content : space-between;
+    flex-wrap: nowrap;
+    margin-top: 7px;
+}
+
+.content-user-program-friend-details-image {
+    @include width-heigth(80px, 80px);
+    border-radius: 4px;
+    margin-left: 1px;
+    //display: inline-block;
+    overflow: hidden;
+}
+
+.content-user-program-friend-details-text {
+    //margin-left: 10px;
+    //display: inline-block;
+    width: 123px;
+    margin-top: -1px;
+}

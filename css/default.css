@@ -9,4 +9,9 @@ body {
   width: 100%;
 }
 
+/* line 10, D:/ProjectJS/abz.agency/src/scss/default.scss */
+a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=../../css/default.map */

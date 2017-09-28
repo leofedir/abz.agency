@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/content-center.css">
+    <link rel="stylesheet" href="css/content-user.css">
     <title>Test assignment for Junior-Middle Frontend Developer position</title>
 
 </head>
 <body>
+    <script src='lib/react.js'></script>
+    <script src='lib/react-dom.js'></script>
+    <script src='lib/babel-browser.min.js' ></script>
     <div class="header-100persentwidth">
         <div class="header">
             <img class="header-valign header-logo" src="images/header/logo.png" alt="Logo">
@@ -40,9 +44,6 @@
             <div class="content-space-space">
                 <div class="content-space-menu" id="id-content-space-menu">
                     LOADING...
-                    <script src='lib/react.js'></script>
-                    <script src='lib/react-dom.js'></script>
-                    <script src='lib/babel-browser.min.js' ></script>
                     <script src='src/js/app.jsx' type='text/babel'></script>
                     <!--<div class="content-space-menu-block">-->
                         <!--<img class="content-space-menu-image" src="images/content/markup_of_this_block.png">-->
@@ -51,7 +52,26 @@
                 </div>
             </div>
         </div>
-        <div class="side-right">SIDERIGHT</div>
+        <div class="side-right">
+            <div class="content-user-program">
+                <div class="content-user-program-friend-header">
+                  <p class="content-user-program-font-header-name">People you may know</p>
+                  <a href="#" class="content-user-program-font-see-all">See All</a>
+                </div>
+                <div class="content-user-program-friend">
+                    <p class="content-user-program-font-name">Dennis Adams</p>
+                    <div class="content-user-program-friend-details">
+                        <img src="images/content/friends/DennisAdams.png" class="content-user-program-friend-details-image">
+                        <div class="content-user-program-friend-details-text">
+                            <p class="content-user-program-font-description">Dentist (Practice Owner)</p>
+                            <p class="content-user-program-font-occupate">London, England</p>
+                            <a href="#" class="content-user-program-font-add-friend">Add Friend</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
 </body>

@@ -88,14 +88,14 @@
 /* line 44, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
 .content-space-menu-block {
   width: 140px;
-  height: 203px;
+  height: 184px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
-  margin: 16px 0 0 15px;
+  margin: 16px 2px 0 15px;
   display: inline-block;
 }
 
@@ -107,11 +107,6 @@
   flex-flow: column wrap;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-
-/* line 60, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
-.content-space-menu-block a {
-  text-decoration: none;
 }
 
 /* line 64, D:/ProjectJS/abz.agency/src/scss/content-center.scss */

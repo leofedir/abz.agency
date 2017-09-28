@@ -54,14 +54,35 @@ let ServicesDirectory = React.createClass({
     }
 });
 
-const Data_Text = ["Accountancy", "Associations", "Buy/Sell Dental Practice", "Cleaning Agencies",
-        "Clinical Waste Collection", "Computer Services", "CPR/Basic Life Support Training",
-        "CQC Compliance Service", "Dental Chair Recovery & Uphoistery Services",
-        "Dental Recruitment", "Dental Software", "Electrical Safety & Testing",
-        "Equipment Engineering", "Equipment Engineering Services", "Finance", "Insurance",
-        "Legionalla Management Services", "Marketing", "Others", "Repairs", "Selling Gold", "Solicitors",
-        "Surgery Design", "Training & Courses", "Uniform & Workwear"
+const ArrayFriendText = [
+    {
+        id: 1,
+        name: "Dennis Adams",
+        job: "Dentist",
+        practice: "Practice Owner",
+        occupate: "London, England",
+        image: ""
+    },
+
+    {
+        id: 2,
+        name: "Dennis Adams",
+        job: "Dentist",
+        practice: "Practice Owner",
+        occupate: "London, England",
+        image: ""
+    },
+
+    {
+        id: 3,
+        name: "Paris, France",
+        job: "Dentist",
+        practice: "Practice Owner",
+        occupate: "Paris, France",
+        image: ""
+    },
+
 ];
 
-ReactDOM.render(<ServicesDirectory ArrayServicesText = { Data_Text } />, document.getElementById('id-content-space-menu'));
+ReactDOM.render(<ServicesDirectory ArrayFriend = { ArrayFriendText } />, document.getElementById('id-content-space-menu'));
 

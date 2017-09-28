@@ -42,10 +42,10 @@
 }
 
 .content-space-menu-block {
-    @include width-heigth(140px, 203px);
+    @include width-heigth(140px, 184px);
     @include flexbox();
     flex-flow: row wrap;
-    margin: 16px 0 0 15px;
+    margin: 16px 2px 0 15px;
     display: inline-block;
 }
 
@@ -57,9 +57,9 @@
     justify-content: flex-start;
 }
 
-.content-space-menu-block a{
-    text-decoration: none;
-}
+//.content-space-menu-block a{
+//    text-decoration: none;
+//}
 
 .content-space-menu-block a:hover .content-space-menu-text-block p{
     color: #71973c;
