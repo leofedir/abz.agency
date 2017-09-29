@@ -76,12 +76,17 @@ $ColorDescription: #7c8695;
     flex-wrap: nowrap;
     margin-top: 8px;
     width: 215px;
-    //margin-bottom: 16px;
+    margin-bottom: -2px;
 }
 
 .content-user-program-friend {
-    margin-top: 14px;
+    margin-top: 16px;
     width: 100%;
+    //margin-bottom: 1px;
+}
+
+.content-user-program-product {
+    @extend .content-user-program-friend;
 }
 
 .content-user-program-friend-details {
@@ -97,13 +102,44 @@ $ColorDescription: #7c8695;
     @include width-heigth(80px, 80px);
     border-radius: 4px;
     margin-left: 1px;
-    //display: inline-block;
     overflow: hidden;
 }
 
 .content-user-program-friend-details-text {
-    //margin-left: 10px;
-    //display: inline-block;
-    width: 123px;
+    width: 119px;
     margin-top: -1px;
+    margin-right: 4px;
+}
+
+.content-user-program-product-after-separator {
+    @include separator(22px, 0, 0, 15px);
+}
+
+.advert {
+    margin-left: 15px;
+}
+
+.advert-child {
+    margin: 20px 0 0 2px;
+}
+
+.advert > p {
+    @extend .advert-child;
+    @extend .content-user-program-font;
+    @extend .content-user-program-font-size-14;
+    @extend .content-user-program-font-color-description;
+}
+
+.advert > img {
+    @extend .advert-child;
+    @include width-heigth(210px, 300px);
+    border: 1px solid #dddddd;
+    margin-left: 1px;
+}
+
+.advert > span {
+    @extend .advert-child;
+    font-family: 'Times New Roman', Georgia, Times, serif;
+    font-size: 11px;
+    color: #d3d3d3;
 }

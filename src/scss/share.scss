@@ -59,3 +59,13 @@ $color-search-blank: #73993d;
   font-family: $font-search;
   font-size: $font-size;
 }
+
+.separator-image {
+  @include width-heigth(213px, 1px);
+}
+
+@mixin separator ($margintop, $marginrigth, $marginbottom, $marginleft) {
+  @extend .separator-image;
+  margin: $margintop $marginrigth $marginbottom $marginleft;
+}
+

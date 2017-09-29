@@ -22,7 +22,7 @@
 }
 
 .header-logo {
-  margin: 11px 0px 0px 16px;
+  margin: 11px 0 0 16px;
   //margin-left: 16px;
   //margin-top: 11px;
 }
@@ -43,15 +43,13 @@
 }
 
 .header-search-blank-search-text {
-  @include def-font(15px)
-  //font-family: $font-search;
-  //font-size: 15px;
+  @include def-font(15px);
   color: white;
   float: right;
-  @include width-heigth(396px, 34px-(2*4px));
+  @include width-heigth(396px, 26px);
   margin: 4px 2px;
   background-color: transparent;
-  border: 0px solid;
+  border: 0 solid;
 }
 
 .header-search-blank-search-text::-webkit-input-placeholder {
@@ -74,7 +72,7 @@
 .header-pictograms-space-img {
   width: 28px;
   height:26px;
-  background: url(../images/pictograms.png) no-repeat;
+  background: url(../images/pictograms2.png) no-repeat;
   display: inline-block;
   margin-right: 13px;
 }
@@ -83,7 +81,7 @@
   @extend .header-pictograms-space-img;
   background-position: 0 0;
   cursor: pointer;
-  border: 0px solid;
+  border: 0 solid;
 }
 
 #header-notifications-image {

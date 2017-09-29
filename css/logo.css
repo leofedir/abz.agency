@@ -29,6 +29,12 @@
   order: 2;
 }
 
+/* line 63, D:/ProjectJS/abz.agency/src/scss/share.scss */
+.separator-image {
+  width: 213px;
+  height: 1px;
+}
+
 /* line 3, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 .header-100persentwidth {
   background-image: url(../images/header/background.jpg);
@@ -55,7 +61,7 @@
 
 /* line 24, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 .header-logo {
-  margin: 11px 0px 0px 16px;
+  margin: 11px 0 0 16px;
 }
 
 /* line 31, D:/ProjectJS/abz.agency/src/scss/logo.scss */
@@ -84,52 +90,52 @@
   height: 26px;
   margin: 4px 2px;
   background-color: transparent;
-  border: 0px solid;
+  border: 0 solid;
 }
 
-/* line 57, D:/ProjectJS/abz.agency/src/scss/logo.scss */
+/* line 55, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 .header-search-blank-search-text::-webkit-input-placeholder {
   color: white;
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
-/* line 63, D:/ProjectJS/abz.agency/src/scss/logo.scss */
+/* line 61, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 .header-search-blank-search-text:focus::-webkit-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-/* line 67, D:/ProjectJS/abz.agency/src/scss/logo.scss */
+/* line 65, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 .header-pictograms-space {
   margin: 23px 0 0 25px;
   width: 97px;
   height: 26px;
 }
 
-/* line 74, D:/ProjectJS/abz.agency/src/scss/logo.scss */
+/* line 72, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 .header-pictograms-space-img, #header-chat-image, #header-notifications-image {
   width: 28px;
   height: 26px;
-  background: url(../images/pictograms.png) no-repeat;
+  background: url(../images/pictograms2.png) no-repeat;
   display: inline-block;
   margin-right: 13px;
 }
 
-/* line 82, D:/ProjectJS/abz.agency/src/scss/logo.scss */
+/* line 80, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 #header-chat-image {
   background-position: 0 0;
   cursor: pointer;
-  border: 0px solid;
+  border: 0 solid;
 }
 
-/* line 89, D:/ProjectJS/abz.agency/src/scss/logo.scss */
+/* line 87, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 #header-notifications-image {
   background-position: -28px 0;
   cursor: pointer;
 }
 
-/* line 95, D:/ProjectJS/abz.agency/src/scss/logo.scss */
+/* line 93, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 .header-image-placeholder {
   width: 32px;
   height: 32px;
@@ -139,13 +145,13 @@
   overflow: hidden;
 }
 
-/* line 103, D:/ProjectJS/abz.agency/src/scss/logo.scss */
+/* line 101, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 .header-text-placeholder {
   margin-left: 7px;
   margin-top: 25px;
 }
 
-/* line 108, D:/ProjectJS/abz.agency/src/scss/logo.scss */
+/* line 106, D:/ProjectJS/abz.agency/src/scss/logo.scss */
 .header-text-placeholder p {
   font-family: "Proxima Nova", Georgia, sans-serif;
   font-size: 16px;

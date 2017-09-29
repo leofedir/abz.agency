@@ -1,12 +1,12 @@
-let ShowData = React.createClass ({
+let ShowDataServicesDirectory = React.createClass ({
     render : function () {
         var XX = this.props.X,
             YY = this.props.Y,
             CoordinateBackGroundPosition = XX+'px '+YY+'px';
         return (
-            <div className="content-space-menu-block">
+            <div  className="content-space-menu-block">
                 <a href="#">
-                        <div className="content-space-menu-image" style={{backgroundPosition: CoordinateBackGroundPosition}}>
+                        <div  className="content-space-menu-image" style={{backgroundPosition: CoordinateBackGroundPosition}}>
                         </div>
                         <div className="content-space-menu-text-block"><p>{this.props.Text}</p></div>
                 </a>
@@ -42,7 +42,7 @@ let ServicesDirectory = React.createClass({
          return (
             <div>
                 { ArrayServices.map( function( item, index ) {
-                    return <ShowData
+                    return <ShowDataServicesDirectory
                         key={index}
                         X= {item.X}
                         Y= {item.Y}

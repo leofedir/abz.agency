@@ -1,56 +1,88 @@
-let ShowData = React.createClass ({
+let ShowDataFriend = React.createClass ({
     render : function () {
-        var XX = this.props.X,
-            YY = this.props.Y,
-            CoordinateBackGroundPosition = XX+'px '+YY+'px';
+        var name = this.props.name,
+            job = this.props.job,
+            practice = this.props.practice,
+            occupate = this.props.occupate,
+            photo = this.props.photo;
         return (
-            <div className="content-space-menu-block">
-                <a href="#">
-                        <div className="content-space-menu-image" style={{backgroundPosition: CoordinateBackGroundPosition}}>
+            <div className="content-user-program-friend">
+                <p className="content-user-program-font-name">{ name }</p>
+                <div className="content-user-program-friend-details">
+                    <img src={ photo } className="content-user-program-friend-details-image" />
+                        <div className="content-user-program-friend-details-text">
+                            <p className="content-user-program-font-description">{ job } ({practice})</p>
+                            <p className="content-user-program-font-occupate">{ occupate }</p>
+                            <a href="#" className="content-user-program-font-add-friend">Add Friend</a>
                         </div>
-                        <div className="content-space-menu-text-block"><p>{this.props.Text}</p></div>
-                </a>
+                </div>
             </div>
         )
 
   }
 });
 
+let ShowProductName = React.createClass ({
+    render : function () {
+        var productname = this.props.productname,
+            description = this.props.description,
+            photo = this.props.photo;
+        return (
+            <div className="content-user-program-friend">
+                <p className="content-user-program-font-name">{ productname }</p>
+                <div className="content-user-program-friend-details">
+                    <img src={ photo } className="content-user-program-friend-details-image" />
+                    <div className="content-user-program-friend-details-text">
+                        <p className="content-user-program-font-description">{ description }</p>
+                    </div>
+                </div>
+            </div>
+        )
 
-let ServicesDirectory = React.createClass({
+    }
+});
+
+let ListFriends = React.createClass({
      render : function() {
-        const
-            RowCoordinates=[-1, -205, -427, -631, -853],
-            ColumsInImage=5,
-            ImageColShift = -177,
-            StartX = -1;
-        var ArrayServices = [],
-            WorkX = StartX,
-            WorkRow = 0,
-            WorkColumn = 0;
-         for (var i=0; i < this.props.ArrayServicesText.length; i++) {
-             ArrayServices.push({id: i, text: this.props.ArrayServicesText[i], X: WorkX, Y:RowCoordinates[WorkRow]});
-             if (((i+1)/ColumsInImage)==Math.round((i+1)/ColumsInImage)) {
-                 WorkColumn = 0;
-                 WorkRow = WorkRow + 1;
-                 WorkX = StartX + (ImageColShift * (WorkColumn));
-             } else {
-                 WorkX = StartX + (ImageColShift * (WorkColumn+1));
-                 WorkColumn = WorkColumn + 1;
-             };
-         }
          return (
             <div>
-                { ArrayServices.map( function( item, index ) {
-                    return <ShowData
-                        key={index}
-                        X= {item.X}
-                        Y= {item.Y}
-                        Text={item.text}
+                <div className="content-user-program-friend-header">
+                    <p className="content-user-program-font-header-name">People you may know</p>
+                    <a href="#" className="content-user-program-font-see-all">See All</a>
+                </div>
+                { this.props.ArrayFriend.map ( function( item, index ) {
+                    return <ShowDataFriend
+                        key={ index }
+                        name={ item.name }
+                        job={ item.job }
+                        practice={ item.practice }
+                        occupate={ item.occupate }
+                        photo={ item.image }
                         />
                 })}
             </div>
          );
+    }
+});
+
+let ListProductNames = React.createClass({
+    render : function() {
+        return (
+            <div>
+                <div className="content-user-program-friend-header">
+                    <p className="content-user-program-font-header-name">Featured Products</p>
+                    <a href="#" className="content-user-program-font-see-all">See All</a>
+                </div>
+                { this.props.ArrayProductName.map ( function( item, index ) {
+                    return <ShowProductName
+                        key={ index }
+                        productname = { item.productname }
+                        description={ item.description }
+                        photo={ item.image }
+                    />
+                })}
+            </div>
+        );
     }
 });
 
@@ -61,28 +93,42 @@ const ArrayFriendText = [
         job: "Dentist",
         practice: "Practice Owner",
         occupate: "London, England",
-        image: ""
+        image: "images/content/friends/DennisAdams.png"
     },
-
     {
         id: 2,
-        name: "Dennis Adams",
+        name: "Mary Carpenter",
         job: "Dentist",
         practice: "Practice Owner",
-        occupate: "London, England",
-        image: ""
+        occupate: "Belgrade, Serbia",
+        image: "images/content/friends/MaryCarpenter.png"
     },
-
     {
         id: 3,
-        name: "Paris, France",
+        name: "Danielle Salazar",
         job: "Dentist",
         practice: "Practice Owner",
         occupate: "Paris, France",
-        image: ""
-    },
-
+        image: "images/content/friends/DanielleSalazar.png"
+    }
 ];
 
-ReactDOM.render(<ServicesDirectory ArrayFriend = { ArrayFriendText } />, document.getElementById('id-content-space-menu'));
+const ArrayProductNameText = [
+    {
+        id: 1,
+        productname: "Product Name 1",
+        description: "Product Short Description. The quick brown fox jumps over the lazy dog.",
+        image: "images/content/product/product1.jpg"
+    },
+    {
+        id: 2,
+        productname: "Product Name 1",
+        description: "Product Short Description. The quick brown fox jumps over the lazy dog.",
+        image: "images/content/product/product2.jpg"
+    },
+];
+
+ReactDOM.render(<ListFriends ArrayFriend = { ArrayFriendText } />, document.getElementById('id-content-user-program'));
+ReactDOM.render(<ListProductNames ArrayProductName = { ArrayProductNameText } />, document.getElementById('id-content-user-program-product'));
+
 
