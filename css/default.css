@@ -7,9 +7,10 @@
 /* line 6, D:/ProjectJS/abz.agency/src/scss/default.scss */
 body {
   width: 100%;
+  word-wrap: break-word;
 }
 
-/* line 10, D:/ProjectJS/abz.agency/src/scss/default.scss */
+/* line 11, D:/ProjectJS/abz.agency/src/scss/default.scss */
 a {
   text-decoration: none;
 }

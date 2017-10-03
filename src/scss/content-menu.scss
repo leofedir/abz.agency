@@ -1,0 +1,112 @@
+@import "share";
+$ColorHeader: #1c2534;
+$ColorDescription: #7c8695;
+$ColorMenu: #59606b;
+$ColorMenuHighLight: #c7cdd9;
+
+.content-user-program-font {
+  font-family: $font-search;
+}
+
+.content-user-program-font-size-14 {
+  font-size: 14px;
+}
+
+.content-user-program-font-size-16 {
+  font-size: 16px;
+}
+
+.content-menu-menu {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.content-menu-menu > ul {
+  //margin-left: 50px;
+  list-style-type: none;
+}
+
+.content-menu-menu > ul > a >li {
+  //height: 50px;
+  //width: 212px;
+}
+
+.content-menu-menu-div {
+  @include flexbox();
+  @include width-heigth(212px, 50px);
+  border-bottom: 1px solid #e0e2e6;
+  color: $ColorMenu;
+  flex-direction : row;
+  justify-content : flex-start;
+  align-items: center;
+  //flex-wrap: nowrap;
+}
+
+.content-menu-menu-img {
+  @include width-heigth(26px, 26px);
+  background: url(../images/pictograms.png) no-repeat;
+  margin-left: 1px;
+  margin-top: 3px;
+}
+
+#content-menu-menu-p1 {
+  @extend .content-menu-menu-img;
+  background-position: -1px -27px;
+  cursor: pointer;
+  border: 0 solid;
+}
+
+#content-menu-menu-p2 {
+  @extend .content-menu-menu-img;
+  background-position: -27px -27px;
+  cursor: pointer;
+  border: 0 solid;
+}
+
+#content-menu-menu-p3 {
+  @extend .content-menu-menu-img;
+  background-position: -51px -26px;
+  cursor: pointer;
+  border: 0 solid;
+}
+
+#content-menu-menu-p4 {
+  @extend .content-menu-menu-img;
+  background-position: -77px -27px;
+  cursor: pointer;
+  border: 0 solid;
+}
+
+.content-menu-menu-div > p {
+  @extend .content-user-program-font;
+  @extend .content-user-program-font-size-16;
+  color: $ColorMenu;
+  margin-left: 25px;
+}
+
+.content-menu-menu-div:hover > #content-menu-menu-p1 {
+  background-position: -1px -53px;
+}
+
+.content-menu-menu-div:hover > #content-menu-menu-p2 {
+  background-position: -27px -53px;
+}
+
+.content-menu-menu-div:hover > #content-menu-menu-p3 {
+  background-position: -51px -52px;
+}
+
+.content-menu-menu-div:hover > #content-menu-menu-p4 {
+  background-position: -77px -53px;
+}
+
+.content-menu-menu-div:hover > p {
+  color: $ColorMenuHighLight;
+}
+
+.content-left-separator {
+  @include separator(13px, 0, 0, 16px);
+}
+
+
+

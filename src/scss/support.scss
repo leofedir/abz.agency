@@ -1,0 +1,68 @@
+@import "share";
+$color-btn-login: #87b448;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.def-font {
+    font-family: $font-page-support;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.color-white {
+    color: white;
+}
+
+body {
+    width: 100%;
+    word-wrap: break-word;
+    //background-color: white;
+    background:
+        url(../images/support/header-top-background.jpg) 0 0 repeat-x,
+        url(../images/support/center-pattern-background.jpg) 0 0 repeat-x;
+    background-position: left top, left 510px;
+    @include flexbox();
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main {
+    width: 1440px;
+    height: 2000px;
+    background-color: white;
+    background:
+        url(../images/support/header-top.jpg) 0 0 no-repeat,
+        url(../images/support/center-pattern.jpg) 0 0 no-repeat;
+    background-position: center top,  center 510px;
+
+}
+
+.logo-loginbtn {
+    @include flexbox();
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+.logo-loginbtn > button{
+    @include width-heigth(109px, 30px);
+    @extend .def-font;
+    @extend .font-size-16;
+    @extend .color-white;
+    background-color: $color-btn-login;
+    border-radius: 4px;
+    border: 0 solid;
+    margin-bottom: 5px;
+}

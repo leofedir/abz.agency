@@ -52,6 +52,11 @@ $ColorDescription: #7c8695;
     line-height: 1.2;
 }
 
+.content-menu-program-font-description {
+    @extend .content-user-program-font-description;
+    line-height: 1.4;
+}
+
 .content-user-program-font-occupate {
     @extend .content-user-program-font;
     @extend .content-user-program-font-size-14;
@@ -65,9 +70,20 @@ $ColorDescription: #7c8695;
     @extend .content-user-program-font-color-header;
 }
 
-.content-user-program {
+.content-user-friend {
     padding: 11px 15px 0 15px;
 }
+
+.content-user-program {
+    padding: 6px 15px 0 16px;
+}
+
+.content-user-companyproduct {
+    //padding: 6px 15px 0 15px;
+    padding: 6px 0 0 0;
+    margin-left: 16px;
+}
+
 
 .content-user-program-friend-header {
     @include flexbox();
@@ -79,10 +95,21 @@ $ColorDescription: #7c8695;
     margin-bottom: -2px;
 }
 
+.content-user-program-friend-header-left {
+    @extend .content-user-program-friend-header;
+    width: 211px;
+}
+
 .content-user-program-friend {
     margin-top: 16px;
     width: 100%;
     //margin-bottom: 1px;
+}
+
+.content-menu-company {
+    @extend .content-user-program-friend;
+    margin-top: 17px;
+    height: 83px;
 }
 
 .content-user-program-product {
@@ -98,6 +125,18 @@ $ColorDescription: #7c8695;
     margin-top: 7px;
 }
 
+.content-user-program-program-details {
+    @extend .content-user-program-friend-details;
+    margin-top: 5px;
+    margin-left: -1px;
+    padding-bottom: 2px;
+}
+
+.content-menu-company-details {
+    @extend .content-user-program-friend-details;
+    margin-top: 0;
+}
+
 .content-user-program-friend-details-image {
     @include width-heigth(80px, 80px);
     border-radius: 4px;
@@ -111,8 +150,17 @@ $ColorDescription: #7c8695;
     margin-right: 4px;
 }
 
-.content-user-program-product-after-separator {
-    @include separator(22px, 0, 0, 15px);
+.content-menu-company-details-text {
+    @extend .content-user-program-friend-details-text;
+    margin-right: 3px;
+}
+
+.content-right-separator {
+    @include separator(24px, 0, 0, 15px);
+}
+
+.content-right-separator2 {
+    @include separator(20px, 0, 0, 15px);
 }
 
 .advert {
@@ -120,14 +168,18 @@ $ColorDescription: #7c8695;
 }
 
 .advert-child {
-    margin: 20px 0 0 2px;
+    margin: 14px 0 0 2px;
 }
 
-.advert > p {
-    @extend .advert-child;
+.advert-p {
     @extend .content-user-program-font;
     @extend .content-user-program-font-size-14;
     @extend .content-user-program-font-color-description;
+}
+
+.advert > p {
+    @extend .advert-p;
+    @extend .advert-child;
 }
 
 .advert > img {
@@ -135,11 +187,82 @@ $ColorDescription: #7c8695;
     @include width-heigth(210px, 300px);
     border: 1px solid #dddddd;
     margin-left: 1px;
+    margin-top: 16px;
 }
 
 .advert > span {
     @extend .advert-child;
-    font-family: 'Times New Roman', Georgia, Times, serif;
+    @extend .content-user-program-font;
     font-size: 11px;
     color: #d3d3d3;
+}
+
+.advert-left {
+    @extend .advert;
+}
+
+
+.advert-child-left {
+    margin: 19px 0 0 3px;
+}
+
+.advert-left > p {
+    @extend .advert-p;
+    @extend .advert-child-left;
+}
+
+.advert-left > img {
+    @extend .advert-child-left;
+    @include width-heigth(210px, 300px);
+    border: 1px solid #dddddd;
+    margin-left: 1px;
+    margin-top: 16px;
+}
+
+.advert-left > span {
+    //@extend .advert-child-left;
+    @extend .content-user-program-font;
+    font-size: 11px;
+    color: #d3d3d3;
+    margin-left: 1px;
+    margin-top: 16px;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 25% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid red;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

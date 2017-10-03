@@ -57,10 +57,6 @@
     justify-content: flex-start;
 }
 
-//.content-space-menu-block a{
-//    text-decoration: none;
-//}
-
 .content-space-menu-block a:hover .content-space-menu-text-block p{
     color: #71973c;
 }
@@ -84,5 +80,15 @@
     background: url(../images/content/markup_of_this_block.png) no-repeat;
 }
 
+
+.content-space-menu-image-JSON{
+    @include width-heigth(138px, 138px);
+    border: 1px solid #e0e2e6;
+    background-color: white;
+}
+
+.content-space-menu-image-JSON:hover {
+    background-color: #f4f7fb;
+}
 
 

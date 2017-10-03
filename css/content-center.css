@@ -1,12 +1,20 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot");
-  src: url("../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff") format("woff"), url("../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf") format("truetype"), url("../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular") format("svg");
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#proxima_nova_altregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 49, D:/ProjectJS/abz.agency/src/scss/share.scss */
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova-Light.svg#proxima_nova_altregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 75, D:/ProjectJS/abz.agency/src/scss/share.scss */
 .wrapper {
   display: -webkit-box;
   display: -moz-box;
@@ -15,7 +23,7 @@
   display: flex;
 }
 
-/* line 53, D:/ProjectJS/abz.agency/src/scss/share.scss */
+/* line 79, D:/ProjectJS/abz.agency/src/scss/share.scss */
 .item {
   -webkit-box-flex: 1 200px;
   -moz-box-flex: 1 200px;
@@ -29,7 +37,7 @@
   order: 2;
 }
 
-/* line 63, D:/ProjectJS/abz.agency/src/scss/share.scss */
+/* line 94, D:/ProjectJS/abz.agency/src/scss/share.scss */
 .separator-image {
   width: 213px;
   height: 1px;
@@ -115,17 +123,17 @@
   justify-content: flex-start;
 }
 
-/* line 64, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
+/* line 60, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
 .content-space-menu-block a:hover .content-space-menu-text-block p {
   color: #71973c;
 }
 
-/* line 68, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
+/* line 64, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
 .content-space-menu-block a:hover .content-space-menu-image {
   background: url(../images/content/markup_of_this_block_hover.png) no-repeat;
 }
 
-/* line 72, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
+/* line 68, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
 .content-space-menu-text-block p {
   font-family: "Proxima Nova", Georgia, sans-serif;
   font-size: 14px;
@@ -135,12 +143,25 @@
   padding: 0 15px 0 15px;
 }
 
-/* line 81, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
+/* line 77, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
 .content-space-menu-image {
   width: 138px;
   height: 138px;
   border: 1px solid #e0e2e6;
   background: url(../images/content/markup_of_this_block.png) no-repeat;
+}
+
+/* line 84, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
+.content-space-menu-image-JSON {
+  width: 138px;
+  height: 138px;
+  border: 1px solid #e0e2e6;
+  background-color: white;
+}
+
+/* line 90, D:/ProjectJS/abz.agency/src/scss/content-center.scss */
+.content-space-menu-image-JSON:hover {
+  background-color: #f4f7fb;
 }
 
 /*# sourceMappingURL=../../css/content-center.map */
